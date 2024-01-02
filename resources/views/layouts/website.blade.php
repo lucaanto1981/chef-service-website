@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Chef Site</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     @vite(['resources/scss/main.scss','resources/js/app.js'])
@@ -17,33 +18,35 @@
 </head>
 
 <body>
-    <header class="container">
-        <div class="logo">
-            <a class="" href="{{ url('/') }}">
-                <img src="/images/logo.svg" alt="Logo small GIVE">
-            </a>
+    <header class="primary-header margin-block-start-24">
+        <img class="logo mx-auto" src="/images/logo.svg" alt="Logo">
         </div>
-        <nav>
-            <ul class="flex-group uppercase">
+        <nav class="primary-navigation margin-block-start-24">
+            <ul class="flex-group mx-auto">
                 <li>
-                    <a href="{{ url('/pagina1/') }}">Pagina 1</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="{{ url('/pagina2/') }}">Pagina 2</a>
+                    <a href="#meals">Meals</a>
                 </li>
                 <li>
-                    <a href="{{ url('/pagina3/') }}">Pagina 3</a>
-                </li>
-                <li>
-                    <a href="{{ url('/pagina4/') }}">Pagina 4</a>
+                    <a href="#testimonials">Testimonials</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <main>
+        @yield('content')
+    </main>
 
-    @yield('content')
 
-    <footer>
+    <footer class="primary-footer section bg-neutral-900 clr-neutral-100 text-center">
+        <div class="container flow">
+            <p class="fw-bold">A goog place for soma basic footer informations</p>
+            <p>Copyright 2002 Chief Services</p>
+            <p>555 via Santa Giovanna d'Antida, 23 - 25030 Rudiano (BS) - Italy</p>
+        </div>
+        </section>
 
     </footer>
 </body>

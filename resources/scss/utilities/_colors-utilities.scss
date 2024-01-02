@@ -2,12 +2,12 @@
 
 //Genero le classi per i colori del testo e del background sulla base dei colori presenti nella $colors map
 @each $color, $shade-map in $colors {
-	@each $shade, $value in $shade-map {
-		.clr-#{$color}-#{$shade} {
-			color: $value;
-		}
-		.bg-#{color}-#{$shade} {
-			background-color: $value;
-		}
-	}
+    @each $shade, $value in $shade-map {
+        .clr-#{$color}-#{$shade} {
+            color: $value;
+        }
+        .bg-#{$color}-#{$shade} {
+            background-color: $value;
+        }
+    }
 }

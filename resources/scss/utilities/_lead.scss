@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.lead {
+    font-size: fs(500);
+    font-weight: $fw-700;
+    color: clr(neutral, 900);
+    text-transform: uppercase;
+
+    //To remove the padding from the following p
+    & + p {
+        margin-top: 0;
+    }
+}

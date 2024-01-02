@@ -2,10 +2,12 @@
 
 //Genero le classi per le dimensioni del testo sulla base delle dimensioni presenti nella $font-sizes map
 @each $font-size-name, $font-size-value in $font-sizes {
-	.fs-#{$font-size-name} {
-		font-size: $font-size-value;
-		@if $font-size-name > 600 {
-			line-height: 1.1;
-		}
-	}
+    .fs-#{$font-size-name} {
+        font-size: $font-size-value;
+
+        //Per i font più grandi riduco la line-height
+        @if $font-size-name > 600 {
+            line-height: 1.1;
+        }
+    }
 }

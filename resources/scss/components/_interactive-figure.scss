@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.interactive-figure {
+    position: relative;
+    overflow: hidden;
+
+    figcaption {
+        background-color: rgb(clr(neutral, 900), 0.75);
+        backdrop-filter: blur(0.35rem);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transition: transform ease-in-out 350ms;
+        transform: translateY(100%);
+    }
+
+    &:is(:hover, :focus) {
+        figcaption {
+            transform: translateY(0%);
+        }
+    }
+}

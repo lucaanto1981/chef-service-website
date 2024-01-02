@@ -1,11 +1,13 @@
 @use "../abstracts/" as *;
 
 .even-columns {
-	display: grid;
-	gap: var(--grid-gap, $grid-gap);
+    display: grid;
+    gap: var(--grid-gap, $grid-gap);
 
-	@include mq(small) {
-		grid-auto-flow: column;
-		grid-auto-columns: 1fr;
-	}
+    //Include a media query for device greater than small
+    //For small device the columne are stacked for greater devices the elements are put on the same line.
+    @include mq(small) {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
