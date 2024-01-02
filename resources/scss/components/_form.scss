@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+.form {
+    &__body {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            border: 2px solid #{clr(primary, 400)};
+            background-color: clr(neutral, 200);
+            padding-inline: size(32);
+            padding-block: size(16);
+            border-radius: 10px;
+
+            &.is-error {
+                border: 5px solid red;
+            }
+        }
+
+        p.input-error {
+            font-size: fs(300);
+            color: red;
+            margin-top: 0;
+        }
+    }
+
+    input[type="submit"] {
+        float: right;
+    }
+}

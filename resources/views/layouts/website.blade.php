@@ -24,13 +24,16 @@
         <nav class="primary-navigation margin-block-start-24">
             <ul class="flex-group mx-auto">
                 <li>
-                    <a href="#about">About</a>
+                    <a href="{{ url('/') }}#about">About</a>
                 </li>
                 <li>
-                    <a href="#meals">Meals</a>
+                    <a href="{{ url('/') }}#meals">Meals</a>
                 </li>
                 <li>
-                    <a href="#testimonials">Testimonials</a>
+                    <a href="{{ url('/') }}#testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a href="{{ url('/contacts') }}">Contacts</a>
                 </li>
             </ul>
         </nav>
