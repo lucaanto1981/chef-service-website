@@ -3,15 +3,15 @@
         <form action="/contacts" method="post" class="form">
             @csrf
             <div class="form__body flow margin-block-end-32">
-                <input type="text" name="name" id="name" placeholder="Insert your name" value="{{ old('name') }}" class="@error('name') is-error @enderror">
+                <input type="text" name="name" id="name" placeholder="Insert your name" required value="{{ old('name') }}" class="@error('name') is-error @enderror">
                 @error('name')
                 <p class="input-error">{{ $message }}</p>
                 @enderror
-                <input type="text" name="surname" id="surname" placeholder="Insert your surname" required value="{{ old('surname') }}">
+                <input type="text" name="surname" id="surname" placeholder="Insert your surname" required value="{{ old('surname') }}" class="@error('surname') is-error @enderror">
                 @error('surname')
                 <p class="input-error">{{ $message }}</p>
                 @enderror
-                <input type="email" name="email" id="email" placeholder="Insert your email" required value="{{ old('email') }}">
+                <input type="email" name="email" id="email" placeholder="Insert your email" required value="{{ old('email') }}" class="@error('email') is-error @enderror">
                 @error('email')
                 <p class="input-error">{{ $message }}</p>
                 @enderror
