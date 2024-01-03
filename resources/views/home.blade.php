@@ -3,7 +3,7 @@
 @section('content')
 
 <section class="hero bg-neutral-900 clr-neutral-100 text-center">
-    <div class="container">
+    <div class="container animate-grow-and-fade-out">
         <h1 class="fs-900 ff-accent mx-auto margin-block-end-24">Homecooked meal delivered straight to your door</h1>
         <div class="flex-group mx-auto">
             <button class="button" data-type="accent">Place order</button>
@@ -20,7 +20,7 @@
                 <picture>
                     <source srcset="../images/about.avif" type="image/avif">
                     <source srcset="../images/about.webp" type="image/webp">
-                    <img class="box-shadow-1 shift-up" src="../images/about.jpg" alt="" srcset="">
+                    <img class="box-shadow-1 shift-up animate-fade-in" src="../images/about.jpg" alt="" srcset="">
                 </picture>
             </div>
             <div class="flow">
@@ -74,7 +74,7 @@
         </header>
         <div class="grid-auto-fit">
             <div>
-                <figure class="interactive-figure">
+                <figure class="interactive-figure animate-fade-in">
                     <picture>
                         <source srcset="../images/meal-01.avif" type="image/avif">
                         <source srcset="../images/meal-01.webp" type="image/avif">
@@ -88,7 +88,7 @@
 
             </div>
             <div>
-                <figure class="interactive-figure">
+                <figure class="interactive-figure animate-fade-in">
                     <picture>
                         <source srcset="../images/meal-02.avif" type="image/avif">
                         <source srcset="../images/meal-02.webp" type="image/avif">
@@ -101,7 +101,7 @@
                 </figure>
             </div>
             <div>
-                <figure class="interactive-figure">
+                <figure class="interactive-figure animate-fade-in">
                     <picture>
                         <source srcset="../images/meal-03.avif" type="image/avif">
                         <source srcset="../images/meal-03.webp" type="image/avif">

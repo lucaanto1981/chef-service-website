@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+.animate-fade-in {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view(); //or scroll()
+    animation-range: entry 100px; //contain or exit or exit-crossing or cover
+}
+
+@keyframes fade-in {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.animate-grow-and-fade-out {
+    animation: grow-and-fade-out linear forwards;
+    animation-timeline: scroll();
+    animation-range-start: exit -90%;
+}
+
+@keyframes grow-and-fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        scale: 2;
+    }
+}
