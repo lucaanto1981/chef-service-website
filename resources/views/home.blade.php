@@ -3,7 +3,7 @@
 @section('content')
 
 <section class="hero bg-neutral-900 clr-neutral-100 text-center">
-    <div class="container animate-grow-and-fade-out">
+    <div class="container">
         <h1 class="fs-900 ff-accent mx-auto margin-block-end-24">Homecooked meal delivered straight to your door</h1>
         <div class="flex-group mx-auto">
             <button class="button" data-type="accent">Place order</button>
@@ -18,9 +18,9 @@
         <div class="even-columns">
             <div>
                 <picture>
-                    <source srcset="../images/about.avif" type="image/avif">
-                    <source srcset="../images/about.webp" type="image/webp">
-                    <img class="box-shadow-1 shift-up animate-fade-in" src="../images/about.jpg" alt="" srcset="">
+                    <source srcset="{{ Vite::asset('resources/images/about.avif') }}" type="image/avif">
+                    <source srcset="{{ Vite::asset('resources/images/about.webp') }}" type="image/webp">
+                    <img class="box-shadow-1 shift-up animate-fade-in" src="{{ Vite::asset('resources/images/about.jpg') }}" alt="" srcset="">
                 </picture>
             </div>
             <div class="flow">
@@ -76,9 +76,9 @@
             <div>
                 <figure class="interactive-figure animate-fade-in">
                     <picture>
-                        <source srcset="../images/meal-01.avif" type="image/avif">
-                        <source srcset="../images/meal-01.webp" type="image/avif">
-                        <img class="" src="../images/meal-01.jpg" alt="" srcset="" loading="lazy">
+                        <source srcset="{{ Vite::asset('resources/images/meal-01.avif') }}" type=" image/avif">
+                        <source srcset="{{ Vite::asset('resources/images/meal-01.webp') }}" type="image/avif">
+                        <img class="" src="{{ Vite::asset('resources/images/meal-01.jpg') }}" alt="" srcset="" loading="lazy">
                     </picture>
                     <figcaption class="padding-32">
                         <h4 class="fs-500 fw-bold uppercase">About this meal</h4>
@@ -90,9 +90,9 @@
             <div>
                 <figure class="interactive-figure animate-fade-in">
                     <picture>
-                        <source srcset="../images/meal-02.avif" type="image/avif">
-                        <source srcset="../images/meal-02.webp" type="image/avif">
-                        <img class="" src="../images/meal-02.jpg" alt="" srcset="" loading="lazy">
+                        <source srcset="{{ Vite::asset('resources/images/meal-02.avif') }}" type="image/avif">
+                        <source srcset="{{ Vite::asset('resources/images/meal-02.webp') }}" type="image/avif">
+                        <img class="" src="{{ Vite::asset('resources/images/meal-02.jpg') }}" alt="" srcset="" loading="lazy">
                     </picture>
                     <figcaption class="padding-32">
                         <h4 class="fs-500 fw-bold uppercase">About this meal</h4>
@@ -103,9 +103,9 @@
             <div>
                 <figure class="interactive-figure animate-fade-in">
                     <picture>
-                        <source srcset="../images/meal-03.avif" type="image/avif">
-                        <source srcset="../images/meal-03.webp" type="image/avif">
-                        <img class="" src="../images/mea3-01.jpg" alt="" srcset="" loading="lazy">
+                        <source srcset="{{ Vite::asset('resources/images/meal-03.avif') }}" type="image/avif">
+                        <source srcset="{{ Vite::asset('resources/images/meal-03.webp') }}" type="image/avif">
+                        <img class="" src="{{ Vite::asset('resources/images/meal-03.jpg') }}" alt="" srcset="" loading="lazy">
                     </picture>
                     <figcaption class="padding-32">
                         <h4 class="fs-500 fw-bold uppercase">About this meal</h4>
@@ -123,9 +123,9 @@
         <div class="grid-auto-fit">
             <div class="card box-shadow-1" data-type="testimonial">
                 <picture>
-                    <source srcset="../images/testimonial-01.avif" type="image/avif">
-                    <source srcset="../images/testimonial-01.webp" type="image/avif">
-                    <img class="" src="../images/testimonial-01.jpg" alt="" srcset="" loading="lazy">
+                    <source srcset="{{ Vite::asset('resources/images/testimonial-01.avif') }}" type="image/avif">
+                    <source srcset="{{ Vite::asset('resources/images/testimonial-01.webp') }}" type="image/avif">
+                    <img class="" src="{{ Vite::asset('resources/images/testimonial-01.jpg') }}" alt="" srcset="" loading="lazy">
                 </picture>
                 <div class="card__body">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa nulla consectetur, reiciendis possimus, animi atque deserunt eos ipsa ullam excepturi, amet delectus a commodi. Voluptas mollitia animi quos beatae.</p>
@@ -139,9 +139,9 @@
             </div>
             <div class="card box-shadow-1" data-type="testimonial">
                 <picture>
-                    <source srcset="../images/testimonial-02.avif" type="image/avif">
-                    <source srcset="../images/testimonial-02.webp" type="image/avif">
-                    <img class="" src="../images/testimonial-02.jpg" alt="" srcset="" loading="lazy">
+                    <source srcset="{{ Vite::asset('resources/images/testimonial-02.avif') }}" type="image/avif">
+                    <source srcset="{{ Vite::asset('resources/images/testimonial-02.webp') }}" type="image/avif">
+                    <img class="" src="{{ Vite::asset('resources/images/testimonial-02.jpg') }}" alt="" srcset="" loading="lazy">
                 </picture>
                 <div class="card__body">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa nulla consectetur, reiciendis possimus, animi atque deserunt eos ipsa ullam excepturi, amet delectus a commodi. Voluptas mollitia animi quos beatae.</p>
@@ -155,9 +155,9 @@
             </div>
             <div class="card box-shadow-1" data-type="testimonial">
                 <picture>
-                    <source srcset="../images/testimonial-02.avif" type="image/avif">
-                    <source srcset="../images/testimonial-02.webp" type="image/avif">
-                    <img class="" src="../images/testimonial-02.jpg" alt="" srcset="" loading="lazy">
+                    <source srcset="{{ Vite::asset('resources/images/testimonial-02.avif') }}" type="image/avif">
+                    <source srcset="{{ Vite::asset('resources/images/testimonial-02.webp') }}" type="image/avif">
+                    <img class="" src="{{ Vite::asset('resources/images/testimonial-02.jpg') }}" alt="" srcset="" loading="lazy">
                 </picture>
                 <div class="card__body">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa nulla consectetur, reiciendis possimus, animi atque deserunt eos ipsa ullam excepturi, amet delectus a commodi. Voluptas mollitia animi quos beatae.</p>

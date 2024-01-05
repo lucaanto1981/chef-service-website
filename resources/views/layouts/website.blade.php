@@ -19,7 +19,7 @@
 
 <body>
     <header class="primary-header margin-block-start-24">
-        <img class="logo mx-auto" src="/images/logo.svg" alt="Logo">
+        <img class="logo mx-auto" src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Logo">
         </div>
         <nav class="primary-navigation margin-block-start-24">
             <ul class="flex-group mx-auto">

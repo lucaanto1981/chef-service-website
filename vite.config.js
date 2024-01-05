@@ -12,5 +12,6 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    publicDir: ["public/images/"],
+    //Inserire questa opzione prima di fare la build se si vuole mettere il sito in dev non nella root ma in una cartella specifica
+    //base: "/laravel-website.it/build/",
 });
